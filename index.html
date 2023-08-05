@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Studio </title>
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+  <header class="page-header">
+       <div class="container header-wrapper">
         <nav>
           <a href="./index.html" class="link-logo1"> <span class="span"> Web</span>Studio </a>
-        <ul  <ul class="ul">
+        <ul class="ul">
           <li><a href="index.html" class="link-menu">Studio</a></li>
           <li><a href="portfolio.html" class="link-menu">Portfolio</a></li>
           <li><a href="#" class="link-menu">Contacts</a></li>
-        </ul>
+        <ul/>
       </nav>
       <address>
       <ul class="ul">
@@ -25,6 +27,7 @@
         <li><a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a></li>
       </ul>
       </address>
+      </div>
     </header>
     <main>
     <section class="section-order"> 
@@ -32,8 +35,9 @@
    <button type="button" class="filter-button button0">Order Service </button>
       </section>
 <section>
+  <div class="container">
   <h2 hidden> Section1 </h2>
-    <ul class="ul">
+    <ul class="ul our-values">
    <li><h3 class="future-title"> Strategy </h3> 
     <p class="future-text"> 
       Our goal is to identify the business problem to walk away with the perfect and creative solution. 
@@ -51,9 +55,11 @@
       Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
     </p> </li>
     </ul>
+  </div>
   </section>
 
    <section>
+    <div class="container">
         <h2 class="section-title">What are we doing</h2>
          <ul class="ul"> 
           <li> <img src="./images/obrazek1.jpg"
@@ -68,9 +74,11 @@
               alt="Smartphone trzymany w prawej dłoni, w tle laptop"
               width="360"  height="300" />
           </li> </ul>
+    </div>
           </section>
 
         <section class="team">
+               <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="ul">
             <li> <img src="./images/image4.jpg"
@@ -98,6 +106,7 @@
               <p class="p">UI Designer</p>
             </li> 
           </ul> 
+               </div>
       </section>
     </main>
     <footer class="footer-section">
