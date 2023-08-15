@@ -31,11 +31,7 @@ h1,h2,h3,p{
   padding: 0;
   box-sizing: border-box; 
 }
-img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 button{
   cursor: pointer;
   border: none;
@@ -178,7 +174,6 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 padding-top: 16px;
 margin-left: 156px;
-margin-top: 140px;
 margin-bottom: 100px;
 }
 
@@ -246,6 +241,7 @@ padding-bottom: 120px;
      background: var(--navyblue, #2E2F42); 
     width: 1440px;
 height: 312px;
+padding-top: 100px;
 }
 
 .team{
@@ -264,10 +260,11 @@ margin-bottom: 120px;
 }
 
 .our-values{
-  display: flex;
-  flex-wrap: wrap;
- gap: 24px;
-flex-shrink: 0;
+  list-style-type: none;
+    display: flex;
+    gap: 24px;
+    margin: 0px;
+    padding-left: 0px;
 }
 
 .our-values > li > h3{
@@ -277,12 +274,7 @@ flex-shrink: 0;
 .goals li {
   width: calc((100% - 72px) / 4);
 }
-.list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 24px;
-}
+
 .page-header{
     border-bottom: 1px solid var(--light);
 }
@@ -324,9 +316,7 @@ flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-}
-.portfolio-style{
-  column-gap: 24px;
+    column-gap: 24px;
   row-gap: 48px;
     margin-bottom: 120px;
 }
