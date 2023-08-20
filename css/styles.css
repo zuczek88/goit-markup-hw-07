@@ -348,6 +348,7 @@ a {
    display: inline-flex;
   justify-content: center;
   align-items: center; 
+    fill: var(--subtletext, #8e8f99);
 }
 .icon-customer{
   width: 104px;
@@ -367,9 +368,6 @@ cursor: pointer;
   gap: 24px;
 }
 
-.clients-icon{
-  fill: #8E8F99;
-}
                                /*start page 2 section Button*/
 .buttonmenu {
   padding: 12px 24px 12px;
@@ -404,6 +402,10 @@ cursor: pointer;
   margin-bottom: 120px;
 }
 
+.li-image{
+  display:flex; 
+  flex-direction: column; 
+}
 .li-image:hover,
 .li-image:focus {
   cursor: pointer;
@@ -495,4 +497,7 @@ padding-bottom: 16px;
 .footer-style{
   display:flex; 
   gap: 16px;
+}
+.a-icon{
+  display: flex;
 }
