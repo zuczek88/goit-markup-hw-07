@@ -13,9 +13,12 @@ html {
   --light: #f4f4fc;
   --ftr: #31d0aa;
   --ocean: #404bbf;
+ --cloud: #F4F4FD;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --main-font: Roboto, sens-serif;
   --secondary-font: Raleway, sens-serif;
+  --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --tr-duration: 250ms;
 }
 body {
   font-family: var(--main-font);
@@ -84,7 +87,11 @@ a {
   gap: 10px;
   list-style: none;
 }
-
+.is-hidden{
+pointer-events: none;
+visibility: hidden;
+opacity: 0;
+}
                                 /* start header section */
 
 .link-menu {
@@ -151,6 +158,17 @@ a {
   margin-left: auto;
   justify-content: flex-end;
 }
+.main-nav a{
+position: relative;
+}
+.main-nav--current a ::after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--ocean);
+}
 
 /* start hero section */
 
@@ -207,6 +225,8 @@ a {
   margin-left: auto;
   width: 496px;
 }
+
+
 
 /* start our values section */
 
@@ -436,7 +456,31 @@ cursor: pointer;
   font-size: 16px;
   line-height: 1.5;
 }
-
+.image-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.image-wrapper> img{
+  display: block;
+width: 360px;
+height: 300px;
+object-fit: cover;
+}
+.image-description{
+  position: absolute;
+  inset: 0;
+  background-color: var(--primary-brand, #4D5AE5);
+  color: var(--cloud, #F4F4FD);
+  translate: 0 100% 0;
+font-family: Roboto;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.32px;
+transition: translate 250ms;
+}
+.card:hover .image-description{
+  translate: 0;
+}
 /* start footer section */
 
 .link-logo2 {
@@ -500,4 +544,42 @@ padding-bottom: 16px;
 }
 .a-icon{
   display: flex;
+}
+
+.close-btn{
+  position: absolute;
+  inset: 1em 1em auto auto;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cornflower);
+  border: 1px solid var(--navyblue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+	inset: 0;
+	background-color: rgb(0 0 0 / 0.5);
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	transition: opacity 250ms;
+}
+.modal-body {
+	position: relative;
+	max-width: 50vw;
+	min-height: 90vh;
+	margin: auto;
+	background-color: #fff;
+	transition: scale 250ms;
+}
+.is-hidden .modal-body {
+	scale: 0;
+}
+
+.modal:not(.is-hidden) .modal-body {
+	scale: 1;
 }
