@@ -278,6 +278,7 @@ a {
   line-height: 1.1;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .filters-team{
   gap: 24px;
@@ -293,9 +294,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 72px;
-  width: 264px;
-  height: 396px;
+  
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -328,7 +327,6 @@ a {
 .list-icons{
   display:flex;
   gap: 24px;
-  padding-bottom: 32px;
 }
 
 /* start Customers section */
@@ -344,7 +342,7 @@ a {
 }
 .customer-style {
   border-radius: 4px;
-  border: 2px solid var(--lightslate, #8e8f99);
+  border: 2px solid #8e8f99;
   width: 168px;
   height: 88px; 
    display: inline-flex;
@@ -363,15 +361,15 @@ fill: var(--ocean);
 cursor: pointer;
 }
 
-.customer{
-height: 3200px;
-}
 .clients-style{
     display: flex;
   justify-content: center;
   gap: 24px;
 }
 
+.clients-icon{
+  fill: #8E8F99;
+}
                                /*start page 2 section Button*/
 .buttonmenu {
   padding: 12px 24px 12px;
@@ -450,6 +448,7 @@ height: 3200px;
   justify-content: center;
   margin-left: 156px;
   margin-top: 100px;
+  
 }
 .footer-text {
   width: 264px;
@@ -465,7 +464,6 @@ height: 3200px;
   height: 312px;
   padding-top: 100px;
   display: flex;
-  
 }
 .icon-footer {
   border-radius: 50%;
@@ -475,7 +473,6 @@ height: 3200px;
   align-items: center;
   width: 40px;
   height: 40px;  
-  column-gap: 16px;  
 }
 .icon-footer:hover,
 .icon-footer:focus {
@@ -494,7 +491,8 @@ padding-bottom: 16px;
 .footer-media{
   margin-left: 120px;
 }
-.list-icons{
-    display: flex;
-    gap: 16px;
+
+.footer-style{
+  display:flex; 
+  gap: 16px;
 }
