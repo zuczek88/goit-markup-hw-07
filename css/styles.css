@@ -13,12 +13,10 @@ html {
   --light: #f4f4fc;
   --ftr: #31d0aa;
   --ocean: #404bbf;
- --cloud: #F4F4FD;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --main-font: Roboto, sens-serif;
   --secondary-font: Raleway, sens-serif;
-  --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --tr-duration: 250ms;
+  
 }
 body {
   font-family: var(--main-font);
@@ -87,12 +85,21 @@ a {
   gap: 10px;
   list-style: none;
 }
-.is-hidden{
-pointer-events: none;
-visibility: hidden;
-opacity: 0;
-}
+
                                 /* start header section */
+.isactive a{
+  position: absolute;
+}
+
+.isactive a::after{
+content: '';
+position: absolute;
+bottom: -20px;
+width: 66px;
+height: 5px;
+background-color: var(--ocean);
+border-radius: 2px;
+}
 
 .link-menu {
   font-family: Roboto;
@@ -106,6 +113,7 @@ opacity: 0;
 .link-menu:hover,
 .link-menu:focus {
   color: #404bbf;
+  transition: color var(--transition);
 }
 .link-contacts {
   color: #2e2f42;
@@ -119,6 +127,8 @@ opacity: 0;
 .link-contacts:focus,
 .link-contacts:hover {
   color: #404bbf;
+    transition: color var(--transition);
+
 }
 .link-logo1 {
   margin-right: 76px;
@@ -158,17 +168,6 @@ opacity: 0;
   margin-left: auto;
   justify-content: flex-end;
 }
-.main-nav a{
-position: relative;
-}
-.main-nav--current a ::after{
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--ocean);
-}
 
 /* start hero section */
 
@@ -186,7 +185,10 @@ position: relative;
   background-color: rgb(64, 75, 191);
   cursor: pointer;
   color: white;
+    transition: color var(--transition);
+
 }
+
 .button0 {
   font-family: inherit;
   width: 169px;
@@ -225,8 +227,6 @@ position: relative;
   margin-left: auto;
   width: 496px;
 }
-
-
 
 /* start our values section */
 
@@ -335,6 +335,8 @@ position: relative;
 .icon-team:active {
   cursor: pointer;
   background-color: var(--ocean, #404bbf);
+    transition: color var(--transition);
+
 }
 .icon-team-style {
   width: 16px;
@@ -380,6 +382,8 @@ height: 56px;
 border-color: var(--ocean);
 fill: var(--ocean);
 cursor: pointer;
+  transition: color var(--transition);
+
 }
 
 .clients-style{
@@ -401,6 +405,8 @@ cursor: pointer;
 .buttonmenu:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+      transition: color var(--transition);
+
 }
 
 .menu-filters {
@@ -432,6 +438,8 @@ cursor: pointer;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+      transition: color var(--transition);
+
 }
 
 .example-style {
@@ -456,31 +464,7 @@ cursor: pointer;
   font-size: 16px;
   line-height: 1.5;
 }
-.image-wrapper{
-  position: relative;
-  overflow: hidden;
-}
-.image-wrapper> img{
-  display: block;
-width: 360px;
-height: 300px;
-object-fit: cover;
-}
-.image-description{
-  position: absolute;
-  inset: 0;
-  background-color: var(--primary-brand, #4D5AE5);
-  color: var(--cloud, #F4F4FD);
-  translate: 0 100% 0;
-font-family: Roboto;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.32px;
-transition: translate 250ms;
-}
-.card:hover .image-description{
-  translate: 0;
-}
+
 /* start footer section */
 
 .link-logo2 {
@@ -524,6 +508,8 @@ transition: translate 250ms;
 .icon-footer:focus {
   cursor: pointer;
   background-color: #31d0aa;
+    transition: color var(--transition);
+
 }
 .footer-media-text{
 color: var(--white, #FFF);
@@ -545,22 +531,50 @@ padding-bottom: 16px;
 .a-icon{
   display: flex;
 }
+ 
 
-.close-btn{
-  position: absolute;
-  inset: 1em 1em auto auto;
-  top: 8px;
-  right: 8px;
-  width: 24px;
-  height: 24px;
-  background-color: var(--cornflower);
-  border: 1px solid var(--navyblue);
-  border-radius: 50%;
-  cursor: pointer;
+/*okienko*/
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.modal{
-  position: fixed;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.li-image:hover .overlay {
+  transform: translatey(0);
+    transition: color var(--transition);
+
+}
+
+.overlay p {
+  color:  var(--cloud, #F4F4FD);
+  padding: 10px;
+  margin: 0;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.32px;
+width: 296px;
+padding: 40px 32px 164px 32px;
+}
+
+/*modal*/
+.modal {
+	position: fixed;
 	inset: 0;
 	background-color: rgb(0 0 0 / 0.5);
 	opacity: 1;
@@ -568,6 +582,7 @@ padding-bottom: 16px;
 	visibility: visible;
 	transition: opacity 250ms;
 }
+
 .modal-body {
 	position: relative;
 	max-width: 50vw;
@@ -576,6 +591,18 @@ padding-bottom: 16px;
 	background-color: #fff;
 	transition: scale 250ms;
 }
+
+.modal-close {
+	position: absolute;
+	inset: 1em 1em auto auto;
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
 .is-hidden .modal-body {
 	scale: 0;
 }
