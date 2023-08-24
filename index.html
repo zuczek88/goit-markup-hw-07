@@ -363,6 +363,14 @@
                   </a></li>
               </ul>
       </div>
+
+      <div class="subscribe">
+        <label for="subscribes" class="label-filter"> <span> Subscribe</span> 
+          <input type="email" name="email-user" placeholder="E-mail" id="subscribes" class="filter-subscribe" />
+        </label>
+          <button type="submit" class="subscribe-button">Subscribe </button>
+      </div>
+
       </div>
     </footer>
 
@@ -371,8 +379,38 @@
 		<button class="modal-close" data-modal-close>
 			X
 		</button>
+
+    <form>
+      <p class="form-head">
+        Leave your contacts and we will call you back
+      </p>
+  <label for="user-name" > Name
+    <div class="input-wrapper">
+    <input type="text" name="username" id="user-name" class="label-active" />
+    </div>
+  </label>
+  <label for="user-phone"> Phone 
+        <div class="input-wrapper">
+      <input type="tel" name="userphone" id="user-phone" class="label-active" />
+        </div>
+  </label>
+  <label for="user-email"> Email
+    <input type="email" name="useremail" id="user-email" class="label-active " />
+  </label>
+<label for="user-comment">   Comment
+  <textarea name="usercomment" id="user-comment" rows="8" placeholder="Text input" class="filter-comment"></textarea>
+</label>
+<label>
+  <input type="checkbox" name="policy" class="filter-policy" />
+  I accept the terms and conditions of the  
+   <a href="" class="link-policy"> Privacy Policy </a> 
+</label>
+
+  <button type="submit" class="modal-button"> Send </button>
+</form>
 	</div>
 </div>
+
   <script src="./js/modal.js"></script>
   </body>
 </html>
