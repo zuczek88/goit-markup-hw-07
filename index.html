@@ -389,13 +389,13 @@
       <p class="form-head">
         Leave your contacts and we will call you back
       </p>
-  <label for="user-name" > Name </label>
+  <label for="user-name" class="label-active"> Name </label>
     <div class="input-wrapper">
         <div>
          <svg class="a-icon icon-form" width="24" height="24">
          <use href="./images/icons.svg#icon-person">
          </use></svg> </div>
-    <input type="text" name="username" id="user-name" />
+    <input type="text" name="username" id="user-name" required />
     </div>
     
   <label for="user-phone" class="label-active"> Phone </label>
@@ -404,7 +404,7 @@
          <svg class="a-icon icon-form" width="24" height="24">
          <use href="./images/icons.svg#icon-phone">
          </use></svg> </div>
-      <input type="number" name="userphone" id="user-phone" class="label-active" required />
+      <input type="number" name="userphone" id="user-phone" required />
         </div>
         
   <label for="user-email" class="label-active"> Email</label>
@@ -413,15 +413,17 @@
          <svg class="a-icon icon-form" width="24" height="24">
          <use href="./images/icons.svg#icon-email">
          </use></svg> </div>
-    <input type="email" name="useremail" id="user-email"  />
+    <input type="email" name="useremail" id="user-email" required />
    </div>
   
 <label for="user-comment"class="label-active"> Comment </label>
   <textarea name="usercomment" id="user-comment" rows="8" placeholder="Text input" class="filter-comment"></textarea>
 
 <label for="privatepolicy">
-  <input type="checkbox" name="policy" id="privatepolicy" class="filter-policy" />
+  <div class="filter-policy">
+  <input type="checkbox" name="policy" id="privatepolicy" required/>
   I accept the terms and conditions of the <a href="" class="link-policy"> Privacy Policy </a> 
+  </div>
 </label>
 
   <button type="submit" class="modal-button"> Send </button>
