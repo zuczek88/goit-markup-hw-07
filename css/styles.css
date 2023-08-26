@@ -656,6 +656,7 @@ width: 169px;
 height: 56px;
 padding: 16px 32px;
 display: block;
+margin: 24px auto 24px auto;
 }
 
 input:not([type="checkbox"]) {
@@ -682,7 +683,9 @@ border: 1px solid #4D5AE5;
 .input-wrapper:focus .icon-form {
 	color: #4D5AE5;
 }
-
+.icon-form{
+  inset: auto 0 8px 16px;
+}
 .filter-policy{
   color: var(--lightslate, #8E8F99);
 font-family: Roboto;
