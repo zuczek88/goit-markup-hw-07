@@ -368,7 +368,12 @@
         <label for="subscribes" class="label-filter"> <span> Subscribe</span> 
           <input type="email" name="email-user" placeholder="E-mail" id="subscribes" class="filter-subscribe" />
         </label>
-          <button type="submit" class="subscribe-button">Subscribe </button>
+          <button type="submit" class="subscribe-button">Subscribe 
+            <div >
+         <svg class="a-icon" width="24" height="24">
+         <use href="./images/icons.svg#icon-plane">
+         </use></svg> </div>
+          </button>
       </div>
 
       </div>
@@ -384,26 +389,39 @@
       <p class="form-head">
         Leave your contacts and we will call you back
       </p>
-  <label for="user-name" > Name
+  <label for="user-name" > Name </label>
     <div class="input-wrapper">
-    <input type="text" name="username" id="user-name" class="label-active" />
+        <div>
+         <svg class="a-icon icon-form" width="24" height="24">
+         <use href="./images/icons.svg#icon-person">
+         </use></svg> </div>
+    <input type="text" name="username" id="user-name" />
     </div>
-  </label>
-  <label for="user-phone"> Phone 
+    
+  <label for="user-phone" class="label-active"> Phone </label>
         <div class="input-wrapper">
-      <input type="tel" name="userphone" id="user-phone" class="label-active" />
+             <div >
+         <svg class="a-icon icon-form" width="24" height="24">
+         <use href="./images/icons.svg#icon-phone">
+         </use></svg> </div>
+      <input type="number" name="userphone" id="user-phone" class="label-active" required />
         </div>
-  </label>
-  <label for="user-email"> Email
-    <input type="email" name="useremail" id="user-email" class="label-active " />
-  </label>
-<label for="user-comment">   Comment
+        
+  <label for="user-email" class="label-active"> Email</label>
+   <div class="input-wrapper">
+        <div >
+         <svg class="a-icon icon-form" width="24" height="24">
+         <use href="./images/icons.svg#icon-email">
+         </use></svg> </div>
+    <input type="email" name="useremail" id="user-email"  />
+   </div>
+  
+<label for="user-comment"class="label-active"> Comment </label>
   <textarea name="usercomment" id="user-comment" rows="8" placeholder="Text input" class="filter-comment"></textarea>
-</label>
-<label>
-  <input type="checkbox" name="policy" class="filter-policy" />
-  I accept the terms and conditions of the  
-   <a href="" class="link-policy"> Privacy Policy </a> 
+
+<label for="privatepolicy">
+  <input type="checkbox" name="policy" id="privatepolicy" class="filter-policy" />
+  I accept the terms and conditions of the <a href="" class="link-policy"> Privacy Policy </a> 
 </label>
 
   <button type="submit" class="modal-button"> Send </button>
