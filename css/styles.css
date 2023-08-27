@@ -737,11 +737,13 @@ padding-left: 30px;
 .input-wrapper:focus-within  {
   border-radius: 4px;
 border: 1px solid #4D5AE5;
+fill: #4D5AE5;
 }
  .input:focus {
 	outline: #4D5AE5;
 }
-.input-wrapper:focus .icon-form {
+
+.input-wrapper:focus  {
 	color: #4D5AE5;
 }
 .icon-form{
