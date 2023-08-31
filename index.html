@@ -13,22 +13,72 @@
 
   <body>
   <header class="page-header">
-       <div class="header-wrapper">
-         <nav>
-          <a href="./index.html" class="link-logo1"> <span class="span"> Web</span>Studio </a>
-        <ul class="nav-list">
-          <li class="isactive"><a href="index.html" class="link-menu current">Studio</a></li>
+           <div class="header-wrapper">
+          <nav class="web">
+  <a href="./index.html" class="link-logo1"> <span class="span"> Web</span>Studio </a>
+          </nav></div>
+          
+<nav class="mobile-nav">
+	<button type="button" class="nav-mobile-button generic-button js-open-menu"> 
+     <svg class="icon-hamburger" width="32" height="22" stroke="#2E2F42" stroke-width="3">
+         <use href="./images/icons.svg#icon-menu-hamburger"></use>
+         </svg>
+      </button>
+	<div class="mobile-menu js-menu-container">
+		<button class="menu-button generic-button js-close-menu"> X </button>
+	
+<ul class="menu nav-list">
+	        <li class="isactive"><a href="index.html" class="link-menu current">Studio</a></li>
           <li><a href="portfolio.html" class="link-menu">Portfolio</a></li>
           <li><a href="#" class="link-menu">Contacts</a></li>
         </ul>
-      </nav>
-      <address>
+
+       <address>
       <ul class="address">
-        <li><a href="mailto:info@devstudio.com" class="link-contacts"> info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a></li>
+        <li><a href="tel:+110001111111" class="link-contacts link-number">+11 (000) 111-11-11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link-contacts link-email"> info@devstudio.com</a></li>
       </ul>
       </address>
-      </div>
+
+       <ul class="list-icons">
+                <li class="icon-team">
+                  <a class="a-icon" href="#0">
+           <svg  width="16px" height="16px">
+           <use href="./images/icons.svg#icon-instagram-2">
+              </use>
+            </svg>
+                  </a></li>
+             <li class="icon-team">
+                  <a class="a-icon" href="#0">
+           <svg width="16px" height="16px">
+                <use class= "icon-team-style" href="./images/icons.svg#icon-twitter-1">
+              </use>
+            </svg>
+                  </a></li>
+            <li class="icon-team">
+                  <a class="a-icon" href="#0">
+           <svg  width="16px" height="16px">
+                          <use href="./images/icons.svg#icon-facebook-1">
+              </use>
+            </svg>
+                  </a></li>
+           <li class="icon-team">
+                  <a class="a-icon" href="#0">
+           <svg  width="16px" height="16px">
+                          <use href="./images/icons.svg#icon-linkedin-1">
+              </use>
+            </svg>
+                  </a></li>
+              </ul>
+	</div>
+
+	<menu class="tablet-menu">
+		<li><a href="#">foo</a></li>
+		<li><a href="#">bar</a></li>
+		<li><a href="#">baz</a></li>
+	</menu>
+</nav>
+
     </header>
 
     <main>
@@ -44,39 +94,25 @@
   <h2 hidden> Section1 </h2>
     <ul class="ul our-values">
    <li class="goals">
-    <div class="bg-icon">
-         <svg class="icon-values" width="264" height="112">
-         <use href="./images/icons.svg#icon-antenna-1"></use>
-         </svg> </div>
+       
     <h3 class="future-title"> Strategy </h3> 
     <p class="future-text"> 
       Our goal is to identify the business problem to walk away with the perfect and creative solution. 
     </p></li>
    <li class="goals">
-       <div class="bg-icon">
-            <svg class="icon-values" width="264" height="112">
-              <use href="./images/icons.svg#icon-clock-1">
-              </use>
-            </svg>
-            </div>
+       
       <h3 class="future-title">Punctuality </h3>
      <p class="future-text">
       Bring the key message to the brand's audience for the best price within the shortest possible time.
     </p></li>
     <li class="goals">
-       <div class="bg-icon">
-            <svg class="icon-values" width="264" height="112">
-              <use href="./images/icons.svg#icon-diagram-1"> </use>
-            </svg> </div>
+      
       <h3 class="future-title"> Diligence </h3>
     <p class="future-text">
       Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
     </p></li>
     <li class="goals">
-  <div class="bg-icon">
-        <svg class="icon-values" width="264" height="112">
-        <use href="./images/icons.svg#icon-astronaut-1"> </use>
-        </svg> </div>
+  
        <h3 class="future-title"> Technologies </h3>   
     <p class="future-text"> 
       Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
@@ -85,34 +121,16 @@
   </div>
   </section>
 
-   <section class="section section-what">
-    <div class="container">
-        <h2 class="section-title">What are we doing</h2>
-         <ul class="ul"> 
-          <li> <img src="./images/obrazek1.jpg"
-              alt="Monitor komputera z wyświetlonymi wykresami"
-              width="360px" height="300px" />
-          </li>
-          <li> <img src="./images/obrazek2.jpg"
-              alt="Smartphone z kilkoma wersjami ekranu"
-            width="360px" height="300px" />
-          </li>
-          <li> <img src="./images/obrazek3.jpg"
-              alt="Smartphone trzymany w prawej dłoni, w tle laptop"
-              width="360px" height="300px" />
-          </li> </ul>
-          </div>
-          </section>
-
         <section class="section team">
           <div class="container">
           <h2 class="section-team">Our Team</h2>
+
           <ul class="ul filters-team">
             <li> <div class="team-style">
               <img src="./images/image4.jpg"
                 alt="Uśmiechnięty mężczyzna z brodą w niebieskiej koszuli"
                 width="264px" height="260px" />
-              <h3 class="future-title">Mark Guerrero</h3>
+              <h3 class="team-title">Mark Guerrero</h3>
               <p class="p">Product Designer</p>
      <ul class="list-icons">
                 <li class="icon-team">
@@ -151,7 +169,7 @@
               <img src="./images/image5.jpg"
                 alt="Uśmiechnięty mężczyzna z zarostem w koszuli"
               width="264px" height="260px" />
-              <h3 class="future-title">Tom Ford</h3>
+              <h3 class="team-title">Tom Ford</h3>
               <p class="p">Frontend Developer</p>
 
               <ul class="list-icons">
@@ -190,7 +208,7 @@
               <img src="./images/image6.jpg"
                 alt="Uśmiechnięta kobieta z długimi włosami w różowym sweterku"
                 width="264px" height="260px" />
-              <h3 class="future-title">Camila Garcia</h3>
+              <h3 class="team-title">Camila Garcia</h3>
               <p class="p">Marketing</p>
               <ul class="list-icons">
                 <li class="icon-team">
@@ -228,7 +246,7 @@
               <img src="./images/image7.jpg"
                 alt="Młody mężczyzna z brodą w szarym T-shircie"
                 width="264px" height="260px" />
-              <h3 class="future-title">Daniel Wilson</h3>
+              <h3 class="team-title">Daniel Wilson</h3>
               <p class="p">UI Designer</p>
               <ul class="list-icons">
                 <li class="icon-team">
@@ -266,7 +284,7 @@
                </div>
       </section>
 
-       <section class="section">
+       <section class="section clients-section">
           <div class="container">
           <h2 class="section-customer">Customers</h2>
           <ul class="clients-style">
@@ -368,6 +386,7 @@
       <div class="subscribe">
         <label for="subscribes" class="label-filter"> <span> Subscribe</span> </label>
           <input type="email" name="email-user" placeholder="E-mail" id="subscribes" class="filter-subscribe" required />
+          
           <button type="submit" class="subscribe-button">Subscribe 
             <div >
          <svg class="a-icon" width="24" height="24">
@@ -428,6 +447,7 @@
 	</div>
 </div>
 
+ <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
   </body>
 </html>
