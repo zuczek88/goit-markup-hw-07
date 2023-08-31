@@ -50,6 +50,8 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
+
+
 /* start header section */
 
 .mobile-menu {
@@ -58,7 +60,7 @@ a {
 	translate: -100% 0 0;
 	transition: translate 400ms;
 	background-color: white;
-  min-width: 428px;
+  width: 428px;
   height: 796px;
 }
 
@@ -133,6 +135,7 @@ margin-bottom: 48px;
 flex-direction: column;
 align-items: flex-start;
 gap: 40px;
+margin-left: 40px;
 }
 
 .link-logo1 {
@@ -156,10 +159,16 @@ gap: 40px;
   display: flex;
     justify-content: space-between;
   align-items: center;
-  min-width: 428px;
+  width: 428px;
 height: 70px;
 }
-
+.list-icons-header{
+  display:flex;
+  gap: 56px;
+  margin-left: 40px;
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
 
 /*
 .link-menu {
@@ -260,7 +269,7 @@ border-radius: 2px;
   background: var(--navyblue, #2e2f42);
   padding: 112px 54px;
   background-size: cover;
-  min-width: 428px;
+  width: 428px;
   height: 432px;
   background-repeat: no-repeat;
   background-position: center;
@@ -279,7 +288,7 @@ border-radius: 2px;
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
-  min-width: 320px;
+  width: 320px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -307,7 +316,7 @@ margin-bottom: 96px;
   line-height: 1.2;
   font-weight: 500;
    width: 396px;
-   margin:0;
+padding-bottom: 8px;   
 }
 
 .future-text {
@@ -316,6 +325,7 @@ margin-bottom: 96px;
   line-height: 1.5;
   width: 396px;
   font-weight: 500;
+  margin-left: 16px;
 }
 
 /* start TEAM section */
@@ -348,6 +358,7 @@ padding-top: 32px;
 .team {
   background: var(--cloud, #f4f4fd);
     width: 428px;
+    padding-bottom: 96px;
 }
 
 .team-style {
@@ -402,6 +413,7 @@ padding-top: 32px;
 .clients-section{
   width: 428px;
   margin-bottom: 96px;
+  margin-top: 96px;
 }
 
 .clients-style{
@@ -710,7 +722,7 @@ textarea {
 
 .modal-body {
 	position: absolute;
-width:408px;
+width:392px;
 height: 584px;
 	background-color: #fff;
 	transition: scale 250ms;
@@ -773,7 +785,7 @@ border-radius: 4px;
 background: var(--iris, #4D5AE5);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 width: 105px;
-height: 24px;
+height: 60px;
 padding: 16px 32px;
 display: block;
 margin-left: auto;
