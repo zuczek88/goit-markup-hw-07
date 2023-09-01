@@ -14,7 +14,7 @@
   <body>
   <header class="page-header">
            <div class="header-wrapper">
-          <nav class="web">
+          <nav >
   <a href="./index.html" class="link-logo1"> <span class="span"> Web</span>Studio </a>
           </nav></div>
           
@@ -28,12 +28,13 @@
 		<button class="menu-button generic-button js-close-menu"> X </button>
 	
 <ul class="menu nav-list">
-	        <li class="isactive"><a href="index.html" class="link-menu current">Studio</a></li>
+	        <li class="isactive">
+            <a href="index.html" class="link-menu current">Studio</a></li>
           <li><a href="portfolio.html" class="link-menu">Portfolio</a></li>
           <li><a href="#" class="link-menu">Contacts</a></li>
         </ul>
 
-       <address>
+  <address>
       <ul class="address">
         <li><a href="tel:+110001111111" class="link-contacts link-number">+11 (000) 111-11-11</a></li>
         <li><a href="mailto:info@devstudio.com" class="link-contacts link-email"> info@devstudio.com</a></li>
@@ -41,44 +42,53 @@
       </address>
 
        <ul class="list-icons-header">
-                <li class="icon-team">
+                <li class="icon-sc-mobile">
                   <a class="a-icon" href="#0">
            <svg  width="16px" height="16px">
            <use href="./images/icons.svg#icon-instagram-2">
               </use>
             </svg>
                   </a></li>
-             <li class="icon-team">
+             <li class="icon-sc-mobile">
                   <a class="a-icon" href="#0">
            <svg width="16px" height="16px">
                 <use class= "icon-team-style" href="./images/icons.svg#icon-twitter-1">
               </use>
             </svg>
                   </a></li>
-            <li class="icon-team">
+            <li class="icon-sc-mobile">
                   <a class="a-icon" href="#0">
            <svg  width="16px" height="16px">
                           <use href="./images/icons.svg#icon-facebook-1">
               </use>
             </svg>
                   </a></li>
-           <li class="icon-team">
+           <li class="icon-sc-mobile">
                   <a class="a-icon" href="#0">
            <svg  width="16px" height="16px">
                           <use href="./images/icons.svg#icon-linkedin-1">
               </use>
             </svg>
                   </a></li>
-              </ul>
-	</div>
+              </ul>	</div>
+        
 
-	<menu class="tablet-menu">
-		<li><a href="#">foo</a></li>
-		<li><a href="#">bar</a></li>
-		<li><a href="#">baz</a></li>
-	</menu>
+          <!– MENU na TABLET/DESKTOP –>
+
+          <div class="tablet-menu">
+               <ul class="nav-tablet-list">
+          <li class="isactive"><a href="index.html" class="link-menu current">Studio</a></li>
+          <li><a href="portfolio.html" class="link-menu">Portfolio</a></li>
+          <li><a href="#" class="link-menu">Contacts</a></li>
+        </ul>
+        <address>
+      <ul class="address">
+        <li><a href="mailto:info@devstudio.com" class="link-contacts"> info@devstudio.com</a></li>
+        <li><a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a></li>
+      </ul>
+      </address>
+    </div >
 </nav>
-
     </header>
 
     <main>
@@ -89,6 +99,7 @@
       </div>
       </section>
       
+
 <section class="section">
     <div class="container future-style">
   <h2 hidden> Section1 </h2>
@@ -197,7 +208,7 @@
            <li class="icon-team">
                   <a class="a-icon" href="#0">
            <svg  width="16px" height="16px">
-                          <use href="./images/icons.svg#icon-linkedin-1">
+                <use href="./images/icons.svg#icon-linkedin-1">
               </use>
             </svg>
                   </a></li>
@@ -339,7 +350,7 @@
           </ul>
     </main>
 
-    <footer >
+    <footer>
       <div class="footer-section">
       <div>
        <a class="link-logo2" href="./index.html"> <span class="span"> Web</span> Studio </a>
