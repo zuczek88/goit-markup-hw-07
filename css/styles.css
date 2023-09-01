@@ -187,7 +187,7 @@ height: 70px;
 
 /* TABLET*/
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px)  {
 		.mobile-menu,
 	.nav-mobile-button {
 		display: none;
@@ -265,6 +265,7 @@ letter-spacing: 0.48px;
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
+  margin-right: 0;
 }
 
 .header-wrapper {
@@ -279,6 +280,35 @@ letter-spacing: 0.48px;
   gap: 12px;
   justify-content: flex-end;
   margin-left: 120px;
+}
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+  .page-header{
+    min-width: 1200px;
+  }
+  .header-wrapper {
+    margin-right: 76px;
+    margin-left: 156px;
+  }
+
+	.tablet-menu {
+  width: 1200px;
+}
+.address{
+  flex-direction: row;
+    display: flex;
+  gap: 40px;
+  margin-left: 332px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+.link-contacts{
+  font-size: 16px;
+line-height: 24px; 
+letter-spacing: 0.32px;
 }
 }
 
@@ -343,7 +373,7 @@ letter-spacing: 0.48px;
 }
 
 /* TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
 
   .section-order{
     width: 768px;
@@ -357,6 +387,13 @@ line-height: 60px;
 letter-spacing: 1.12px;
 width: 496px;
 }
+}
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+.section-order{
+    width: 1440px;
+  }
 }
 
 
@@ -394,9 +431,15 @@ padding-bottom: 8px;
   font-weight: 500;
   margin-left: 16px;
 }
+.bg-icon{
+  display:none;
+}
+.section-what{
+  display: none;
+}
 
 /* TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px)  {
   .our-values{
     width: 768px;
       flex-wrap: wrap;
@@ -416,6 +459,85 @@ padding-bottom: 8px;
   }
 }
 
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.future-style {
+  display: block;
+  height: 104px;
+}
+.our-values {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding-left: 0px;
+  width: 1200px;
+  margin-bottom: 120px;
+}
+
+.our-values > li > h3 {
+  font-size: 32px;
+  font-weight: 600px;
+}
+
+.goals li {
+  width: calc((100% - 72px) / 4);
+}
+.future-title {
+  color: rgb(46, 47, 66);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 8px;
+  padding-top: 32px;
+}
+.future-text {
+  color: rgb(67, 68, 85);
+  font-size: 16px;
+  line-height: 1.5;
+  width: 264px;
+}
+.bg-icon {
+  display: flex;
+  background: var(--cloud, #f4f4fd);
+}
+.icon-values {
+  display: block;
+  padding: 24px 100px;
+}
+
+/* start what doing section */
+
+.section-what {
+  display: flex;
+  justify-content: space-between;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.ul{
+  gap: 24px;
+}
+}
 /* start TEAM section */
 
 .team-title{
@@ -496,7 +618,7 @@ padding-top: 32px;
 }
 
 /* TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px)  {
+@media screen and (min-width: 768px)  {
   .team{
     width: 768px;
     padding-left: 108px;
@@ -506,6 +628,17 @@ padding-top: 32px;
  margin-right: 0;
  margin-left: 0;
   }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+.team{
+  width: 1440px;
+}
+.section-team{
+  padding-top: 0;
+}
 }
 
 /* start Customers section */
@@ -558,7 +691,7 @@ cursor: pointer;
 }
 
 /* TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1199px)  {
+@media screen and (min-width: 768px)   {
   .clients-section{
   width: 768px;
 }
@@ -570,6 +703,19 @@ column-gap: 72px;
 row-gap: 72px;
 flex-basis: calc((100% - 48px) / 3);
 }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+  .clients-section{
+    width: 1440px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .clients-style{
+  column-gap: 24px;
+  }
 }
 
                                /*start page 2 section Button*/
@@ -816,7 +962,36 @@ row-gap: 72px;
   margin-left: 108px;
   margin-bottom: 0;
 }
+}
 
+/* DESKTOP */
+
+@media screen and (min-width: 1200px)  {
+  .footer-section{
+    width: 1440px;
+    flex-direction: row;
+    gap: 120px;
+  }
+  .footer-media{
+    margin-left: 0;
+  }
+  .footer-media-text{
+    margin-left: 0;
+  }
+  .footer-text{
+    margin-left: 156px;
+  }
+  .filter-subscribe{
+    width: 264px;
+    margin-left: 0;
+  }
+  .label-filter{
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+  .subscribe-button{
+    margin-left: 24px;
+  }
 }
 
 /*okienko*/
