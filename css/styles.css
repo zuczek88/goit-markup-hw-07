@@ -188,7 +188,7 @@ height: 70px;
 /* TABLET*/
 
 @media screen and (min-width: 768px)  {
-		.mobile-menu,
+	.mobile-menu,
 	.nav-mobile-button {
 		display: none;
 	}
@@ -256,7 +256,6 @@ letter-spacing: 0.48px;
 .link-contacts:hover {
   color: #404bbf;
     transition:  var(--transition);
-
 }
 .link-logo1 {
   font-family: raleway;
@@ -354,7 +353,7 @@ letter-spacing: 0.32px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 0.5)),
-    url( https://s3-alpha-sig.figma.com/img/9a77/142c/2586bdcf8470d56adf54002538acc0c8?Expires=1694390400&Signature=kHdpWpyp2JCAPuu4FpwQZF7lYK8xb91cDmPoNSFkGGMp8wkUr7l5YblpT4mxOm-igc5JznQlOZFrvU~PYDD4P52CpVnqwN2o8NsBy7IuYQ-JXZkG0ouXA8nIh8-Jm6ZMJNtIBn8oz~tlrLGRz3YApyXJjRaemYKkGCjzcquuMnTTFZzZ5sZUsB7krT2Iou7b8RUIJq8C1HxQwupAhnW~83AKkNkbgkN2wilNLjZhlbtumPjRu6dAaE17Bn85JTBMAsnAZ~6IyzZaggBwTP11u7xwSCTn6U8P3iJBtaD~M28VVb~SV8fbmFAavrAaw6fIf6aTqT7sDz3uOKAc~~ZZgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  url( ../images/people-office1x.png );
 }
 
 .hero-title {
@@ -378,6 +377,8 @@ letter-spacing: 0.32px;
 
   .section-order{
     width: 768px;
+     background-image: linear-gradient(hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 0.5)),
+  url( ../images/people-office2x.png );
   }
 .hero-title{
   text-align: center;
