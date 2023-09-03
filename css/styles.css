@@ -249,8 +249,7 @@ letter-spacing: 0.72px;
   text-transform: capitalize;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section-main-heading {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -739,10 +738,8 @@ letter-spacing: 0.48px;
   padding-top: 16px;
   font-style: normal;
 }
-}
 
 /* TABLET order*/
-@media screen and (min-width: 768px) {
 
   .section-order{
      background-image: linear-gradient(hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 0.5)),
@@ -757,10 +754,10 @@ line-height: 60px;
 letter-spacing: 1.12px;
 width: 496px;
 }
-}
+
 
 /* TABLET our values*/
-@media screen and (min-width: 768px)  {
+
   .our-values{
     width: 768px;
       flex-wrap: wrap;
@@ -778,9 +775,9 @@ width: 496px;
   .future-text{
     width: 356px;
   }
-}
+
 /* TABLET team*/
-@media screen and (min-width: 768px)  {
+
   .team{
     padding-left: 108px;
     padding-right: 108px;
@@ -795,9 +792,9 @@ width: 496px;
  justify-content: space-around;
  row-gap: 64px;
   }
-}
+
 /* TABLET customers*/
-@media screen and (min-width: 768px)   {
+
   .clients-section{
   width: 768px;
 }
@@ -809,9 +806,8 @@ column-gap: 72px;
 row-gap: 72px;
 flex-basis: calc((100% - 48px) / 3);
 }
-}
+
 /* tablet footer*/
-@media screen and (min-width: 768px) {
   
 .footer-section{
   width: 768px;
@@ -876,20 +872,20 @@ row-gap: 72px;
 line-height: 24px; 
 letter-spacing: 0.32px;
 }
-}
+
 
 /* DESKTOP order*/
 
-@media screen and (min-width: 1200px)  {
+
 .section-order{
   height: 600px;
   padding-top: 188px;
   }
-}
+
 
 /* DESKTOP our values*/
 
-@media screen and (min-width: 1200px)  {
+
 .container{
   max-width: 1200px;
 }
@@ -960,10 +956,9 @@ letter-spacing: 0.32px;
 .ul{
   gap: 24px;
 }
-}
+
 /* DESKTOP team*/
 
-@media screen and (min-width: 1200px)  {
 .container{
   max-width: 1200px;
 }
@@ -977,21 +972,19 @@ letter-spacing: 0.32px;
     flex-direction: row;
     justify-content: center;
 }
-}
+
 
 /* DESKTOP customers*/
 
-@media screen and (min-width: 1200px)  {
   .clients-section{
     width: 1440px;
   }
   .clients-style{
   column-gap: 24px;
   }
-}
+
 /* DESKTOP footer*/
 
-@media screen and (min-width: 1200px)  {
   .container{
     max-width: 1440px;
   }
@@ -1023,7 +1016,7 @@ letter-spacing: 0.32px;
   }
 }
 
-/*okienko*/
+/*okienko portfolio*/
 
 .box {
   position: relative;
@@ -1061,7 +1054,7 @@ padding: 40px 32px 164px 32px;
 }
 
 
-/*formularz*/
+/*formularz order*/
 
 .modal {
 	position: fixed;
