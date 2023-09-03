@@ -224,7 +224,7 @@ height: 70px;
 .section-order {
   text-align: center;
   background: var(--navyblue, #2e2f42);
-  padding: 112px 54px ;
+  padding: 112px 0;
   background-size: cover;
   height: 432px;
   background-repeat: no-repeat;
@@ -244,8 +244,7 @@ letter-spacing: 0.72px;
   margin-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
-  width: 320px;
-  height: 80px;
+  max-width: 320px;
   text-transform: capitalize;
 }
 
@@ -281,7 +280,6 @@ margin-bottom: 96px;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
-   width: 396px;
 padding-bottom: 8px;   
 }
 
@@ -289,7 +287,6 @@ padding-bottom: 8px;
   color: rgb(67, 68, 85);
   font-size: 16px;
   line-height: 1.5;
-  width: 396px;
   font-weight: 500;
 }
 .bg-icon{
@@ -327,6 +324,7 @@ padding-top: 32px;
   gap: 72px;
     display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .team {
   background: var(--cloud, #f4f4fd);
@@ -338,8 +336,6 @@ padding-top: 32px;
   width: 264px;
   display: flex;
   padding-bottom: 32px;
- margin-left: 82px;
-  margin-right: 82px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -381,7 +377,6 @@ padding-top: 32px;
 /* start Customers section */
 
 .clients-section{
-  width: 428px;
   margin-bottom: 96px;
   margin-top: 96px;
 }
@@ -509,20 +504,19 @@ cursor: pointer;
   font-weight: 800;
   text-decoration: none;
   font-family: Raleway;
-  flex-direction: column;
+display: flex;
   justify-content: center;
-  margin-left: 156px;
-  margin-top: 100px;
+  text-align: center;
 }
 .footer-text {
   width: 264px;
-  margin-bottom: 72px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
   padding-top: 16px;
-  margin-left: 80px;
+  margin: 0 auto;
+    margin-bottom: 72px;
 }
 .footer-section {
   background: var(--navyblue, #2e2f42);
@@ -556,15 +550,13 @@ font-weight: 500;
 line-height: 1.5; 
 letter-spacing: 0.32px;
 padding-bottom: 16px;
-padding-left: 46px;
-}
-.footer-media{
-  margin-left: 120px;
+text-align: center;
 }
 
 .footer-style{
   margin-bottom: 72px;
   display:flex; 
+  justify-content: center;
   gap: 16px;
 }
 .a-icon{
@@ -574,8 +566,8 @@ padding-left: 46px;
 /*newsletter */
 
 .label-filter{
-  padding-left: 176px;
   padding-bottom: 16px;
+  text-align: center;
 }
 .subscribe{
 color: var(--white, #FFF);
@@ -587,9 +579,8 @@ letter-spacing: 0.32px;
 }
 
 .filter-subscribe{
-  width: 398px;
+  width: 100%;
   padding-left: 15px;
-  margin-left: 16px;
 height: 40px;
 border-radius: 4px;
 border: 1px solid var(--white, #FFF);
@@ -620,8 +611,9 @@ font-size: 16px;
 font-weight: 500;
 line-height: 24px; 
 letter-spacing: 0.64px;
+display: flex;
+margin: 0 auto;
 margin-top: 16px;
-margin-left: 131px;
 }
 
 input, textarea {
@@ -747,6 +739,7 @@ letter-spacing: 0.48px;
      background-image: linear-gradient(hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 0.5)),
   url( ../images/people-office1x.png );
   }
+  
 .hero-title{
   text-align: center;
 font-family: Roboto;
@@ -754,7 +747,8 @@ font-size: 56px;
 font-style: normal;
 line-height: 60px; 
 letter-spacing: 1.12px;
-width: 496px;
+max-width: 496px;
+margin-bottom: 36px;
 }
 
 
@@ -770,7 +764,7 @@ width: 496px;
   }
  
   .future-title{
-    width: 264px;
+    text-align: inherit;
       font-weight: 700;
       line-height: 1.1;
   }
@@ -809,7 +803,7 @@ row-gap: 72px;
 flex-basis: calc((100% - 48px) / 3);
 }
 
-/* tablet footer*/
+/* TABLET footer*/
   
 .footer-section{
    display: flex;
@@ -850,7 +844,7 @@ row-gap: 72px;
 
 @media screen and (min-width: 1200px)  {
   .container {
-  width: 1200px;
+  max-width: 1200px;
 }
 
   .header-wrapper {
@@ -886,9 +880,6 @@ letter-spacing: 0.32px;
 
 /* DESKTOP our values*/
 
-.container{
-  max-width: 1200px;
-}
 .future-style {
   padding-top: 120px;
   padding-left: 0;
@@ -959,9 +950,6 @@ letter-spacing: 0.32px;
 
 /* DESKTOP team*/
 
-.container{
-  max-width: 1200px;
-}
 .team{
   margin-top:120px;
   padding-left: 0;
@@ -984,12 +972,11 @@ letter-spacing: 0.32px;
   }
 
 /* DESKTOP footer*/
+.container{
+max-width: 1200px;
+}
 
-  .container{
-    max-width: 1440px;
-  }
   .footer-section{
-    width: 1440px;
     flex-direction: row;
   }
   .footer-text{
