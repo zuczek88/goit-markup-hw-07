@@ -804,7 +804,9 @@ flex-basis: calc((100% - 48px) / 3);
 }
 
 /* TABLET footer*/
-  
+  .container{
+    max-width: 768px;
+  }
 .footer-section{
    display: flex;
      flex-wrap: wrap;
@@ -845,11 +847,12 @@ row-gap: 72px;
 @media screen and (min-width: 1200px)  {
   .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
-  .header-wrapper {
-    margin-right: 76px;
-   }
+.header-wrapper {
+  margin-right: 76px;
+}
 
 	.tablet-menu {
   width: 1200px;
