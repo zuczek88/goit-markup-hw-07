@@ -51,7 +51,7 @@ a {
   box-sizing: border-box;
 }
 .container {
-  max-width: 428px;
+  width: 428px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -568,9 +568,7 @@ text-align: center;
 .label-filter{
   padding-bottom: 16px;
   text-align: center;
-}
-.subscribe{
-color: var(--white, #FFF);
+  color: var(--white, #FFF);
 font-family: Roboto;
 font-size: 16px;
 font-weight: 500;
@@ -636,7 +634,7 @@ textarea {
 
 @media screen and (min-width: 768px)  {
 	.container {
-  max-width: 768px;
+  width: 768px;
 }
   .menu-mobile {
 		display: none;
@@ -804,18 +802,20 @@ flex-basis: calc((100% - 48px) / 3);
 }
 
 /* TABLET footer*/
-  .container{
-    max-width: 768px;
-  }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
 .footer-section{
    display: flex;
      flex-wrap: wrap;
 flex-direction: row;
-gap: 24px;
-row-gap: 72px;
 }
 .link-logo2{
   margin-left: 108px; 
+  justify-content: normal;
 }
 .footer-media{
   margin-left: 0;
@@ -823,22 +823,30 @@ row-gap: 72px;
 .footer-text{
   width: 264px;
   margin-left: 108px;
+  margin-bottom: 0;
 }
 .footer-media-text{
   margin-left: 0;
+  text-align: unset;
 }
 .subscribe-button{
-  margin-left: 24px;
+display: inline-flex;
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 16px;
   margin-top: 0;
 }
 .filter-subscribe{
   width: 264px;
   margin-left: 108px;
+  margin-right: 24px;
 }
 .label-filter{
   padding-bottom: 16px;
   padding-left: 108px;
   margin-bottom: 0;
+  text-align: unset;
 }
 }
 
@@ -846,7 +854,7 @@ row-gap: 72px;
 
 @media screen and (min-width: 1200px)  {
   .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -854,7 +862,7 @@ row-gap: 72px;
   margin-right: 76px;
 }
 
-	.tablet-menu {
+.tablet-menu {
   width: 1200px;
 }
 
@@ -975,12 +983,16 @@ letter-spacing: 0.32px;
   }
 
 /* DESKTOP footer*/
-.container{
-max-width: 1200px;
-}
 
+.container{
+width: 1200px;
+}
   .footer-section{
-    flex-direction: row;
+   margin-top: 120px;
+  }
+  .footer-container{
+    display: flex;
+    flex-wrap: nowrap;
   }
   .footer-text{
     margin-right: 120px;
@@ -1003,6 +1015,9 @@ max-width: 1200px;
 }
   .subscribe-button{
     margin-left: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
